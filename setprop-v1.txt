@@ -1,0 +1,365 @@
+setprop debug.gpu.fake_gpu_renderer "A16 Bionic SoC"
+setprop debug.gpu.fake_gpu_vendor "Apple Inc."
+setprop debug.hwui.renderer "skiagl"
+setprop debug.performance.tuning 1
+setprop debug.cpurend.vsync false
+setprop debug.gpurend.vsync false
+setprop debug.performance.tuning 1
+setprop debug.hwui.disable_vsync true
+cmd thermalservice override-status 0
+cmd power set-fixed-performance-mode-enabled true
+setprop debug.rs.cpufb 0
+setprop debug.rs.script.arm lut3d
+setprop debug.composition.type mdp
+ setprop debug.cpurend.vsync false
+ setprop debug.egl.force_msaa true
+ setprop debug.egl.hw 0
+ setprop debug.egl.swapinterval 0
+ setprop debug.hwui.cpu_freq 0
+ setprop debug.hwui.disable_vsync true
+ setprop debug.hwui.disable_vsynce true
+ setprop debug.hwui.gpu_freq 0
+ setprop debug.hwui.multicore_enabled 1
+ setprop debug.hwui.power_forced 0
+ setprop debug.hwui.refresh_forced 90
+ setprop debug.hwui.refresh_rate_forced 90
+ setprop debug.hwui.renderer vulkan
+ setprop debug.hwui.target_cpu_time_percent 75
+ setprop debug.use_cpu_multicore 1
+ setprop debug.mdpcomp.logs 0
+ setprop debug.memory.manager allocation
+ setprop debug.oculus.refreshRate 90
+ setprop debug.OVRPlugin.systemDisplayFrequency 90
+ setprop debug.performance.tuning 1
+ setprop debug.renderer.process compound
+ setprop debug.sf.framedrop 0
+ setprop debug.sf.hw 0
+ #bufferrender#
+setprop debug.hwui.filter_test_overhead true
+setprop debug.hwui.use_gpu_pixel_buffers 1
+
+#unlock_cpu and_gpu_restrictions#
+setprop debug.cpurend.vsync false
+setprop debug.gpurend.vsync false
+setprop debug.hwui.disable_vsync true
+
+#composite_type#
+setprop debug.composition.type mdp
+
+#buffering_composite#
+setprop debug.hwc.mdpThreshold 4.5
+
+#boost_hw_stablizer#
+setprop debug.mdpcomp.logs 0
+setprop debug.mdpcomp.4k2kSplit 1
+
+#gpu_logic_compression#
+setprop debug.forceAutoTextureCompression 1
+
+#rendering_type#
+setprop debug.hwui.renderer opengl
+(opengl,vulkan,skiagl,skiavk)
+Recommended=opengl
+
+#performance_enable#
+setprop debug.performance.tuning 1
+
+#stabilizer_frame_drop#
+setprop debug.gaming.mode_enable 1
+
+#mode_type_kernel#
+setprop debug.hwui.mode extreme
+setprop debug.kernel.mode extreme
+
+#disable_terminal_engine# (Test Beta)
+setprop debug.thermal.enable false
+setprop debug.thermal.disable true
+setprop debug.system.thermal 0
+
+setprop debug.enable.sglscale "1" 
+setprop debug.gralloc.gfx_ubwc_disable "0"
+setprop debug.sf.enable_hwc_vds "1"
+setprop debug.sf.fb_always_on 1 
+setprop debug.gralloc.map_fb_memory 1
+setprop debug.hwc.dynThreshold 1.5 
+setprop debug.sf.fb_always_on 1 
+setprop debug.gralloc.enable_fb_ubwc 1
+setprop debug.rs.dcg-disable 1
+
+setprop debug.sf.enable_advance_sf_phase_offset_ns 1
+
+setprop debug.sf.high_fps_early_app_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_early_gl_app_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_early_gl_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_early_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_late_app_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_late_gl_app_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_late_gl_phase_offset_ns 100000
+
+setprop debug.sf.high_fps_late_phase_offset_ns 100000
+
+setprop debug.sf.early_app_phase_offset_ns 100000
+
+setprop debug.sf.early_gl_app_phase_offset_ns 100000
+
+setprop debug.sf.early_gl_phase_offset_ns 100000
+
+setprop debug.sf.early_phase_offset_ns 100000
+
+setprop debug.egl.hw 1
+
+setprop debug.egl.swapinterval 0
+
+setprop debug.gl.hw 1
+
+setprop debug.gl.swapinterval 0
+
+setprop debug.gr.swapinterval 0
+
+setprop debug.hwui.disable_vsync true
+
+setprop debug.hwui.skip_empty_damage true
+
+setprop debug.hwui.target_cpu_time_percent 100
+
+setprop debug.hwui.use_hint_manager true
+
+setprop debug.renderengine.backend "skiaglthreaded"
+
+setprop debug.sf.enable_egl_backpressure 0
+
+setprop debug.sf.enable_gl_backpressure "0"
+
+setprop debug.sf.enable_hwc_vds "1"
+setprop debug.sf.hw "1"
+
+setprop debug.sf.latch_unsignaled "0"
+
+setprop debug.sf.swapinterval "0"
+
+setprop debug.sf.gpu_freq_index "0"
+
+setprop debug.gles.layers EGL_KHR_gl_texture_cubemap_image:EGL_KHR_gl_texture_3D_image:EGL_KHR_gl_renderbuffer_image 
+
+setprop debug.vulkan.layers VK_KHR_shared_presentable_image:VK_KHR_16bit_storage:VK_KHR_android_surface
+
+setprop debug.rs.cpufb false
+
+setprop debug.rs.script.arm lut3d
+
+setprop debug.rs.dcg-disable 1
+
+setprop debug.rs.precision 1
+
+setprop debug.rs.forcerecompile 1
+
+setprop debug.sf.hwc_service_name default
+
+setprop debug.sf.enable_hwc_vds 1
+
+setprop debug.sf.max_igbp_list_size 0
+
+setprop debug.sf.early_phase_offset_ns 100000
+
+setprop debug.rs.default-CPU-driver 1
+
+setprop debug.rs.max-threads true
+
+setprop debug.rs.rsov 1
+
+setprop debug.rs.script 1
+
+setprop debug.hwui.capture_skp_enabled true
+
+setprop debug.hwui.capture_skp_frames 2
+
+setprop debug.hwui.use_gpu_pixel_buffers true
+
+setprop debug.hwui.disable_draw_defer true
+
+setprop debug.hwui.disable_draw_reorder true
+
+setprop debug.hwui.level 1
+
+setprop debug.hwui.use_buffer_age true
+
+setprop debug.hwui.renderer skiagl
+
+setprop debug.rs.default-CPU-driver 1
+
+setprop debug.sf.enable_advance_sf_phase_offset_ns 1
+
+setprop debug.sf.high_fps_early_app_phase_offset_ns 0
+
+setprop debug.sf.high_fps_early_gl_app_phase_offset_ns 0
+
+setprop debug.sf.high_fps_early_gl_phase_offset_ns 0
+
+setprop debug.sf.high_fps_early_phase_offset_ns 0
+
+setprop debug.sf.high_fps_late_app_phase_offset_ns 0
+
+setprop debug.sf.high_fps_late_gl_app_phase_offset_ns 0
+
+setprop debug.sf.high_fps_late_gl_phase_offset_ns 0
+
+setprop debug.sf.high_fps_late_phase_offset_ns 0
+
+setprop debug.sf.early_app_phase_offset_ns 0
+
+setprop debug.sf.early_gl_app_phase_offset_ns 0
+
+setprop debug.sf.early_gl_phase_offset_ns 0
+
+setprop debug.sf.early_phase_offset_ns 0
+
+setprop debug.rs.max-threads true
+
+setprop debug.rs.script 1
+
+setprop debug.sf.gpu_freq_index "0"
+
+setprop debug.egl.force_msaa false; setprop debug.egl.force_fxaa false; setprop debug.egl.force_taa false; setprop debug.cpurend.vsync false; setprop debug.gpurend.vsync false; setprop debug.cpuprio 7; setprop debug.gpuprio 7; setprop debug.ioprio 7; setprop debug.hwui.target_cpu_time_percent 100; setprop debug.hwui.target_gpu_time_percent 100; setprop debug.hwui.use_hint_manager 1; setprop debug.renderer.process compound; setprop debug.choreographer.skipwarning 16; setprop debug.choreographer.callback 120; setprop debug.hwui.disable_draw_defer true; setprop debug.hwui.disable_draw_reorder true; setprop debug.hwui.enable_partial_updates true; setprop debug.gralloc.enable_fb_ubwc 1; setprop debug.media.codec2 2; setprop debug.sf.early_app_phase_offset_ns 500000; setprop debug.sf.early_gl_app_phase_offset_ns 15000000; setprop debug.sf.early_gl_phase_offset_ns 3000000; setprop debug.sf.early_phase_offset_ns 500000; setprop debug.sf.enable_gl_backpressure 1; setprop debug.sf.high_fps_early_gl_phase_offset_ns 9000000; setprop debug.sf.high_fps_early_phase_offset_ns 6100000; setprop debug.sf.hw 1; setprop debug.sf.phase_offset_threshold_for_next_vsync_ns 6100000; setprop debug.stagefright.c2inputsurface -1; setprop debug.stagefright.ccodec 4; setprop debug.stagefright.omx_default_rank 512; setprop debug.sf.hwc.min.duration 0; setprop debug.scenegraph.batching_performance 1; setprop debug.sf.disable_client_composition_cache 1; setprop debug.dev.ssrm.turbo true; setprop debug.gralloc.map_fb_memory 0; setprop debug.dev.disable_sched_boost true; setprop debug.rs.default-CPU-buffer 262144; setprop debug.javafx.animation.fullspeed true; setprop debug.javafx.animation.framerate 120; setprop debug.composition.type c2d; setprop debug.composition.type2 gpu; setprop debug.composition.type3 cpu; setprop debug.dev.addfree 4; setprop debug.sf.latch_unsignaled 1; setprop debug.sf.enable_hwc_vds 1; setprop debug.sf.hw 1; setprop debug.fw.bservice_enable 1; setprop debug.egl.profiler 0; setprop debug.gr.swapinterval 0; setprop debug.fb.rgb565 1; setprop debug.enabletr true; setprop debug.overlayui.enable 1; setprop debug.atrace.app_number 1; setprop debug.vulkan.layers VK_KHR_dynamic_rendering,VK_KHR_synchronization2,VkFramebuffer; setprop debug.assert 1;
+
+
+setprop debug.egl.force_msaa false; setprop debug.egl.force_fxaa false; setprop debug.egl.force_taa false; setprop debug.cpurend.vsync false; setprop debug.gpurend.vsync false; setprop debug.cpuprio 7; setprop debug.gpuprio 7; setprop debug.ioprio 7; setprop debug.hwui.target_cpu_time_percent 100; setprop debug.hwui.target_gpu_time_percent 100; setprop debug.hwui.use_hint_manager 1; setprop debug.renderer.process compound; setprop debug.choreographer.skipwarning 16; setprop debug.choreographer.callback 120; setprop debug.hwui.disable_draw_defer true; setprop debug.hwui.disable_draw_reorder true; setprop debug.hwui.enable_partial_updates true; setprop debug.gralloc.enable_fb_ubwc 1; setprop debug.media.codec2 2; setprop debug.sf.early_app_phase_offset_ns 500000; setprop debug.sf.early_gl_app_phase_offset_ns 15000000; setprop debug.sf.early_gl_phase_offset_ns 3000000; setprop debug.sf.early_phase_offset_ns 500000; setprop debug.sf.enable_gl_backpressure 1; setprop debug.sf.high_fps_early_gl_phase_offset_ns 9000000; setprop debug.sf.high_fps_early_phase_offset_ns 6100000; setprop debug.sf.hw 1; setprop debug.sf.phase_offset_threshold_for_next_vsync_ns 6100000; setprop debug.stagefright.c2inputsurface -1; setprop debug.stagefright.ccodec 4; setprop debug.stagefright.omx_default_rank 512; setprop debug.sf.hwc.min.duration 0; setprop debug.scenegraph.batching_performance 1; setprop debug.sf.disable_client_composition_cache 1; setprop debug.dev.ssrm.turbo true; setprop debug.gralloc.map_fb_memory 0; setprop debug.dev.disable_sched_boost true; setprop debug.rs.default-CPU-buffer 262144; setprop debug.javafx.animation.fullspeed true; setprop debug.javafx.animation.framerate 120; setprop debug.composition.type c2d; setprop debug.composition.type2 gpu; setprop debug.composition.type3 cpu; setprop debug.dev.addfree 4; setprop debug.sf.latch_unsignaled 1; setprop debug.sf.enable_hwc_vds 1; setprop debug.sf.hw 1; setprop debug.fw.bservice_enable 1; setprop debug.egl.profiler 0; setprop debug.gr.swapinterval 0; setprop debug.fb.rgb565 1; setprop debug.enabletr true; setprop debug.overlayui.enable 1; setprop debug.atrace.app_number 1; setprop debug.vulkan.layers VK_KHR_dynamic_rendering,VK_KHR_synchronization2,VkFramebuffer; setprop debug.assert 1;setprop debug.performance.tuning 1
+setprop debug.cpurend.vsync false
+setprop debug.gpurend.vsync false
+setprop debug.hwui.disable_vsync true
+cmd thermalservice override-status 0
+cmd power set-fixed-performance-mode-enabled true
+
+cmd thermalservice override-status 0
+
+cmd thermalservice override-status 0
+setprop debug.sf.phase_offset_threshold_for_next_vsync_ns 6100000
+setprop debug.sf.disable_backpressure 1
+setprop debug.sf.latch_unsignaled 1
+setprop debug.sf.enable_hwc_vds 1
+setprop debug.sf.early_phase_offset_ns 500000
+
+setprop debug.sf.early_app_phase_offset_ns 500000
+
+setprop debug.sf.early_gl_phase_offset_ns 3000000
+
+setprop debug.sf.early_gl_app_phase_offset_ns 15000000
+
+setprop debug.sf.high_fps_early_phase_offset_ns 6100000
+
+setprop debug.sf.high_fps_early_gl_phase_offset_ns 650000
+
+setprop debug.sf.high_fps_late_app_phase_offset_ns 100000
+
+setprop debug.hwui.renderer skiagl
+
+
+settings put global power.throttling.disable 1
+settings put global thermal.gpu_shader_clock_throttle.disable 1
+settings put global thermal.gpu_core_clock_throttle.disable 1
+settings put global thermal.gpu_power_throttle.disable 1
+settings put global thermal.gpu_thermal_throttle.disable 1
+settings put global thermal.gpu_memory_throttle.disable 1
+settings put global thermal.gpu_fan_control.disable 1
+settings put global thermal.gpu_boost.disable 1
+settings put global thermal.gpu_control.disable 1
+settings put global thermal.gpu_throttle.disabled 1
+settings put global thermal.backlight.disabled 1
+settings put global thermal.boost.disabled 1
+settings put global thermal.inactive_delay.disabled 1
+settings put global thermal.throttling.disable 1
+settings put global thermal.profile.disable 1
+settings put global thermal.throttle_ratio.disable 1
+settings put global thermal.turbo_ratio_limit.disable 1
+settings put global thermal.cooling_device_state.disable 1
+settings put global thermal.dynamic_scheduling.disable 1
+settings put global thermal.critical_temp.disable 0
+settings put global thermal.threshold.disable 1
+settings put global thermal.overheat_protection.disable 1
+settings put global thermal.alert.disable 1
+settings put global thermal.fan.disable 0
+settings put global thermal.shutdown.disable 1
+settings put global thermal.balance_algorithm 0
+settings put global thermal.performance_mode.disable 0
+settings put global thermal.force_fan_on.disable 0
+settings put global thermal.critical_trip_point.disable 1
+settings put global thermal.auto_thermal_disable 1
+settings put global thermal.zone.disabled 1
+settings put global thermal.trip_point.disabled 1
+settings put global thermal.suspend.disabled 0
+settings put global thermal.thermal_policy.disable 1
+settings put global thermal.fan_disable 1
+settings put global thermal.cpu_thermal_throttle.disable 1
+settings put global thermal.ambient_sensor.disable 0
+
+
+
+setprop debug.composition.type gpu
+
+
+
+cmd thermalservice override-status 0
+
+cmd thermalservice override-status 0
+
+
+setprop debug.cpurend.vsync false
+setprop debug.gpurend.vsync false
+
+setprop debug.surface.package.name com.dts.freefiremax
+cmd device_config put game_overlay com.dts.freefiremax mode=2
+cmd thermalservice override-status 0
+
+pm disable-user --user 0 com.samsung.android.game.gos
+pm disable-user --user 0 com.samsung.android.game.gametools
+pm disable-user --user 0 com.samsung.android.game.gamehome
+pm disable-user --user 0 com.samsung.android.spaymini
+setprop debug.rs.max-threads 1
+setprop debug.rs.rsov 1
+setprop debug.rs.scipt 1
+
+setprop debug.sf.showcpu 1
+setprop debug.kill_allocating.task 0
+setprop debug.system.thermal 0
+setprop debug.thermal.enable false
+setprop debug.thermal.disable true
+setprop debug.hwui.cpu_freq 1742
+setprop debug.hwui.gpu_freq 1000
+cmd power set-fixed-performance-mode-enabled true
+device_config put game_overlay com.dts.freefiremax mode=2,fps=120
+cmd power set-fixed-performance-mode-enabled true
+cmd game mode performance com.dts.freefiremax
+settings put secure refresh_rate_mode 2
+settings put global samsung_screen_refresh_rate 0
+cmd game mode performance com.sec.android.app.launcher
+device_config put game_overlay com.sec.android.app.launcher mode=2,fps=120
+cmd game mode performance com.android.systemui
+device_config put game_overlay com.android.systemui mode=2,fps=120
+setprop debug.hwui.renderer.disable 1
+setprop debug.performance.tuning 1
+setprop debug.egl.hw 1
+setprop debug.sf.hw 1
+
+setprop debug.hwui.render_dirty_regions false
+setprop debug.composition.type gpu
+setprop debug.sf.enable_hwc_vds 1
+
+setprop debug.disable_slow_animations 1
+
+setprop debug.mdpcomp.maxlayer 8
+setprop debug.egl.swapinterval 1
+setprop debug.egl.vsync 0
+setprop debug.hwui.use_buffer_age false
+setprop debug.hwui.use.gpu_booster 1
+device_config put game_overlay com.dts.freefiremax mode=2,fps=120
+
+
+
+setprop debug.OVRPlugin.systemDisplayFrequency 120
+setprop debug.OVRManager.cpuLevel 2
+setprop debug.OVRManager.gpuLevel 2
